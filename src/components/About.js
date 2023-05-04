@@ -62,7 +62,7 @@ export default function About(props) {
               style={myStyle}
             >
               <div className="accordion-body" style={myStyle}>
-                CRUD gives you a way to saved your private notes smoothly.
+                MyNotebook gives you a way to saved your private notes smoothly.
               </div>
             </div>
           </div>
@@ -118,7 +118,7 @@ export default function About(props) {
               style={myStyle}
             >
               <div className="accordion-body" style={myStyle}>
-                CRUD is a free notes making tool that provides instant security of your personal notes as you need to login first to open it. If you don't have an account then create your CRUD account through signup. Thus it is suitable for making self notes quickly and efficiently. All your notes are secured on cloud.
+                MyNotebook is a free notes making tool that provides instant security of your personal notes as you need to login first to open it. If you don't have an account then create your MyNotebook account through signup. Thus it is suitable for making self notes quickly and efficiently. All your notes are secured on cloud.
               </div>
             </div>
           </div>
@@ -146,7 +146,7 @@ export default function About(props) {
               style={myStyle}
             >
               <div className="accordion-body" style={myStyle}>
-                This CRUD software works in any web browser such as Chrome, Edge, Firefox, Safari, Opera.
+                This MyNotebook software works in any web browser such as Chrome, Edge, Firefox, Safari, Opera.
               </div>
             </div>
           </div>

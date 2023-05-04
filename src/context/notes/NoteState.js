@@ -9,7 +9,7 @@ const NoteState = (props) => {
   // Get All Notes
   const getNotes = async () => {
     // To do: API call
-    const response = await fetch(`${host}/api/notes/fetchallnotes`, {
+    const response = await fetch(`${host}/api/notes/fetchAllNotes`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -24,7 +24,7 @@ const NoteState = (props) => {
   // Add Notes
   const addNotes = async (title, description, tag) => {
     // To do: API call
-    const response = await fetch(`${host}/api/notes/addnotes`, {
+    const response = await fetch(`${host}/api/notes/addNotes`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -40,7 +40,7 @@ const NoteState = (props) => {
   // Edit Notes
   const editNotes = async (id, title, description, tag) => {
     // To do: API call
-    const response = await fetch(`${host}/api/notes/updatenotes/${id}`, {
+    const response = await fetch(`${host}/api/notes/updateNotes/${id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',

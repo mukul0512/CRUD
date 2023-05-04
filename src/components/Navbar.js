@@ -57,7 +57,7 @@ const Navbar = (props) => {
 //                 };
 
 Navbar.defaultProps = {
-    title: "CRUD",
+    title: "MyNotebook",
     aboutText: "About",
 };
 

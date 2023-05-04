@@ -38,15 +38,15 @@ function App() {
   return (
     <>
       <NoteState>
-        {/* <Navbar title="CRUD" aboutText="About" mode={mode} toggleMode={toggleMode} /> */}
+        {/* <Navbar title="MyNotebook" aboutText="About" mode={mode} toggleMode={toggleMode} /> */}
         <Navbar mode={mode} toggleMode={toggleMode} />
         <Alert alert={alert} />
         <div className="container">
           <Routes>
             <Route path="/" element={<Home mode={mode} showAlert={showAlert} />} />
-            <Route path="/about" element={<About heading="About CRUD" mode={mode} toggleMode={toggleMode} showAlert={showAlert} />} />
-            <Route path="/login" element={<Login heading="Login to continue in CRUD" mode={mode} showAlert={showAlert} />} />
-            <Route path="/signUp" element={<SignUp heading="Create an account to use CRUD" mode={mode} showAlert={showAlert} />} />
+            <Route path="/about" element={<About heading="About MyNotebook" mode={mode} toggleMode={toggleMode} showAlert={showAlert} />} />
+            <Route path="/login" element={<Login heading="Login to continue in MyNotebook" mode={mode} showAlert={showAlert} />} />
+            <Route path="/signUp" element={<SignUp heading="Create an account to use MyNotebook" mode={mode} showAlert={showAlert} />} />
           </Routes>
         </div>
       </NoteState>
