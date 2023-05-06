@@ -20,8 +20,9 @@ router.post('/createUser', [
   }
   try {
     // Check weather the user with this email already exist
+    console.log("email",req.body.email)
     let user = await User.findOne({ email: req.body.email });
-    // console.log(user);
+    console.log(user);
     if (user) {
       return res.status(400).json({ success, error: "Sorry a user with this email already exist." })
     }
@@ -45,6 +46,7 @@ router.post('/createUser', [
 
   } catch (error) {
     console.error(error.message);
+    console.log(error);
     res.status(500).send("Internal Server Error");
   }
 })

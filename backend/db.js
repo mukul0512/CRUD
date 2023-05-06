@@ -1,11 +1,12 @@
 const mongoose = require('mongoose');
 
-const mongoURI = "mongodb://localhost:27017/MyNotebook/MongoDB%20Compass?directConnection=true&tls=false&readPreference=primary";
+const mongoURI = "mongodb://localhost:27017/MyNotebook?readPreference=primary&directConnection=true&tls=false";
 
-const connectToMongo = () => {
-    mongoose.connect(mongoURI, () => {
+const connectToMongo = async () => {
+    await mongoose.connect(mongoURI, () => {
         console.log("Connected to Mongo Successfully.");
     })
+    mongoose.set('strictQuery', true)
 }
 
 module.exports = connectToMongo;
